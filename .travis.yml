@@ -6,4 +6,4 @@ before_script:
   - git clone --depth=1 https://$GIT_TOKEN@github.com/xmjiao/ci-util.git
 
 script:
-  - './ci-util/trigger-via-api.sh -b $TRAVIS_COMMIT_MESSAGE'
+  - './ci-util/trigger-via-api.sh $TRAVIS_COMMIT_MESSAGE'
